@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Canva Design</title>
+    <style>
+        body {
+            margin: 10;
+            padding: 10;
+        }
+
+        nav {
+            background-color: #ffffff;
+            overflow: hidden;
+            position: fixed; /* Make the nav fixed at the top */
+            top: 0;
+            width: 100%;
+            z-index: 1000; /* Ensure it is on top of the overlay */
+            box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1); /* Add a subtle shadow */
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: #525252;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 17px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background-color: #838383;
+            color: white;
+        }
+        nav a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+        iframe {
+            width: 100%;
+            height: 1900px;
+            border: none;
+            margin: 10;
+            padding: 10;
+        }
+    
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 22%;
+            background-color: rgb(255, 255, 255);
+            opacity: 1; /* Adjust the opacity if needed */
+            z-index: 10; /* Ensures the overlay is on top of the iframe */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="test.html">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="overlay"></div>
+    <iframe src="https://docs.google.com/document/d/1ubzDUtF0G2Jo57e2LXZAMZ-lcN4y9X4bbF68F_BMb_s/edit?usp=sharing" title="Canva Design"></iframe>
+    
+</body>
+</html>
+
+
